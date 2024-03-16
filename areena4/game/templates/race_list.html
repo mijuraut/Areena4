@@ -1,0 +1,17 @@
+<!-- game/templates/game/race_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Race List</title>
+</head>
+<body>
+    <h1>Race List</h1>
+
+    <ul>
+        {% for race in races %}
+            <li>{{ race.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.background {
+    
+}
+
+.arena {
+    width: 277px;
+    height: 277px;
+    background-color: #88888888; /* Gray */
+}
+
+.manager {
+    width: 425px;
+    height: 300px;
+    background-color: #00f; /* Blue */
+}
+
+.taisteluloki {
+    width: 425px;
+    height: 129px;
+    background-color: #008000; /* Dark Green */
+}
+
+.gladiator-info {
+    width: 209px;
+    height: 444px;
+    background-color: #ffff99; /* Light Yellow */
+}

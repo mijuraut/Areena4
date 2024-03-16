@@ -1,0 +1,28 @@
+<!-- game/templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Areena 4 remake{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="static/css/base.css ">
+    <link rel="stylesheet" type="text/css" href="static/css/arena.css">
+</head>
+<body>
+[navbar tänne]
+<!-- Placeholder for Arena Component -->
+<div class="arena">
+    {% include 'arena.html' %}
+</div>
+
+<!-- Placeholder for Manager Component -->
+<div class=" manager"></div>
+
+<!-- Placeholder for Combat Log Component -->
+<div class="taisteluloki"></div>
+
+<!-- Placeholder for Gladiator Info Component -->
+<div class="gladiator-info"></div>
+</body>
+</html>
