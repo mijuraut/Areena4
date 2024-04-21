@@ -1,0 +1,16 @@
+Ulompi kansio (areena4) voi olla minkä niminen vain, Djangolle ei ole väliä
+
+manage.py lets you interact with this Django project in various ways. 
+
+inner areena4/ directory is the actual Python package for your project. Its name is the Python package name you'll need to use to import anything inside it (e.g. areena4.urls)
+
+areena/__init__.py: An empty file that tepps Python that this directory should be considered a Python package.
+
+areena4/settings.py Settings/configuration for this Django project.
+
+areena4/urls.py: The URL declarations for this Django project; a "table of contents" of your Django-powered site.
+
+areena4/asgi.py: An entry-point for ASGI-compatible web serverss to serve your project.
+
+areena4/wsgi.py: An entry-point for WSGI-compatible web servers to serve your project.
+

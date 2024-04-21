@@ -1,7 +1,26 @@
 /* game/static/css/arena.css */
 
 /* Styles for the arena component */
+.grid-cell {
+    position: relative; /* Ensure positioning context for absolute positioning */
+    width: 33px; /* Set the width of the tile */
+    height: 32px; /* Set the height of the tile */
+}
+
+.grid-cell img {
+    position: absolute; /* Position the gladiator image relative to its parent */
+    top: 0; /* Position the gladiator image at the top of the tile */
+    left: 0; /* Position the gladiator image at the left of the tile */
+    width: 32px; /* Set the width of the gladiator image */
+    height: 32px; /* Set the height of the gladiator image */
+}
+
 .selected-gladiator {
-    border: 4px solid red; /* Set the border to be 1px wide and solid */
+    position: absolute; /* Position the border relative to its parent */
+    top: 0; /* Position the border at the top of the tile */
+    left: 0; /* Position the border at the left of the tile */
+    width: 32px; /* Set the width of the border */
+    height: 32px; /* Set the height of the border */
+    border: 1px solid gray; /* Set the border to be 1px wide and solid */
     box-sizing: border-box; /* Include the border width in the element's total width and height */
 }

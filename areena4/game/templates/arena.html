@@ -4,11 +4,27 @@
     <div class="grid-container">
         <p>Joo</p>
         <!-- Render the grid based on the arena matrix -->
-        <div class="grid-cell">
-            <img selected-gladiator src="static/images/kivihirvio.png" alt="Gladiator Image">
-        </div>
-        <div class="grid-cell">
-            <img src="static/images/kivihirvio.png" alt="Gladiator Image">
+
+        <button ng-click="printArena()">JS test</button>
+    </div>
+</div>
+
+<div ng-app="arenaApp" ng-controller="arenaController">
+    <div ng-repeat="row in arena">
+        <div class="grid-row">
+            <div class="grid-cell" ng-repeat="cell in row track by $index" ng-style="getCellStyle(cell)">
+                <img ng-src="{{ getImagePath(cell) }}" alt="Background Image" class="background-image">
+                <img ng-src="{{ getOverlayImagePath(cell) }}" alt="Overlay Image" class="overlay-image" ng-show="isOverlayVisible(cell)">
+            </div>
         </div>
     </div>
 </div>
+
+
+
+<div class="grid-cell">
+            <img class="selected-gladiator" src="static/images/kivihirvio.png" alt="Gladiator Image">
+        </div>
+        <div class="grid-cell">
+            <img src="static/images/barbaari.png" alt="barbaari">
+        </div>

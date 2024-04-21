@@ -1,11 +1,22 @@
-.background {
-    
-}
+/* game/static/css/base.css */
 
+/* Styles for the container */
+
+.componentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 444px;
+    width: 634px;
+}
 .arena {
     width: 277px;
     height: 277px;
-    background-color: #88888888; /* Gray */
+    /*background-color: #88888888; !* Gray *!*/
+}
+
+.arena-grid {
+    grid-gap: 1px;
 }
 
 .manager {
@@ -14,13 +25,15 @@
     background-color: #00f; /* Blue */
 }
 
-.taisteluloki {
+.combat-log {
     width: 425px;
     height: 129px;
     background-color: #008000; /* Dark Green */
 }
 
 .gladiator-info {
+    top: 0;
+    left: 425px;
     width: 209px;
     height: 444px;
     background-color: #ffff99; /* Light Yellow */
